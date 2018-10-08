@@ -18,8 +18,8 @@ class PhoneForm extends Component {
     // 상태 초기화
     this.setState({
       name: '',
-      phone: '',
-      id:''
+      phone: ''
+      //id:''
     })
   }
   render() {
@@ -38,13 +38,8 @@ class PhoneForm extends Component {
           onChange={this.handleChange}
           name="phone"
         />
-         -
-        <input
-          placeholder="별명"
-          value={this.state.id}
-          onChange={this.handleChange}
-          name="id"
-        />
+         
+        
         <button type="submit">등록</button>
       </form>
     );
